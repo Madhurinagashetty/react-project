@@ -9,13 +9,13 @@ const App = () => {
   return (
     <Router>
       <div>
+    
         <nav className="navbar">
+          <Link to="/">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Emblem-person-orange.svg/1024px-Emblem-person-orange.svg.png" alt="Logo" className="logo" />
+          </Link>
           <ul>
             <li>
-            <Link to="/">
-           
-            <img src="https://www.freeiconspng.com/uploads/coffee-icon-png-5.png" alt="Logo" />
-          </Link>
               <Link to="/">Home</Link>
             </li>
             <li>
@@ -27,6 +27,7 @@ const App = () => {
           </ul>
         </nav>
 
+        
         <div className="content">
           <Routes>
             <Route path="/" element={<Home />} />
@@ -40,4 +41,3 @@ const App = () => {
 };
 
 export default App;
-
